@@ -107,17 +107,18 @@ npm run dev
 
 - The backend is organized using the MVC Pattern to ensure separation of concerns:
 
+```
 server/
 ├── controllers/      # Logic for Check-in, OTP verification, etc.
 ├── models/           # Mongoose Schemas (Event data structure)
 ├── routes/           # API Endpoints
 ├── db/               # Database connection logic
 └── server.js         # Entry point
-
+```
 ### Edge Cases Handled
 
 **Location Permission**: Gracefully handles scenarios where the user denies browser geolocation access.
 **Database Connection**: The server waits for a successful DB connection before accepting requests to prevent crashes.
 **Validation**: Ensures photos and names are present before allowing submissions.
 
-`Author: Vishaka Malik Submission for: Zappy Full Stack Developer Internship`
+`Author: Vishaka Malik`
